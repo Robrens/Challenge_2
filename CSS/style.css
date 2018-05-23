@@ -4,8 +4,28 @@ Gris très clair : #A6A6A6 */
 
 body{
   background-image: url(../Image/bg.png);
+  line-height: 1.5;
   /* background-size: cover; */
   /* background-repeat: no-repeat; */
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 52px;
+    font-family: 'Terminal Dosis', sans-serif;
+}
+
+img[alt="search"] {
+    float: right;
+    display: inline-block;
+    height: 22px;
+    width: 34px;
+}
+
+header h2 {
+margin-bottom: 25px;
+font-size: 13px;
+font-family: 'Helvetica Neue', sans-serif;
 }
 
 header, section, footer {
@@ -16,23 +36,32 @@ header, section, footer {
 .nav_header {
   width: 100%;
   background-color: #A6A6A6;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 13px;
+  height: 59px;
 }
 
 .nav_header>ul {
   width: 90%;
   margin: auto;
+  border: solid none;
+  border-color: #606060;
+  border-width: 2px;
 }
 
 .nav_header .ul_header>li{
   display: inline-block;
   text-align: center;
   width: 16.2%;
+  position: relative;
+  height: 100%;
 }
 
 .nav_header .ul_header>li ul{
   display: none;
   position: absolute;
   text-align: center;
+  width: 100%;
 }
 
 .nav_header .ul_header>li:hover ul{
@@ -42,6 +71,8 @@ header, section, footer {
 }
 
 .nav_header .ul_header>li:hover ul li{
+    height: 33px;
+    text-align: center;
 }
 
 .nav_header{
