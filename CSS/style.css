@@ -4,22 +4,35 @@ Gris très clair : #A6A6A6 */
 
 body{
   background-image: url(../Image/bg.png);
-  line-height: 1.5;
-  /* background-size: cover; */
-  /* background-repeat: no-repeat; */
+  /* line-height: 1.5; */
+}
+
+main {
+  box-shadow: 0 0 5px #606060;
+  background-color: white;
+  width: 900px;
+  margin: auto;
+  padding: 0 47px;
+}
+
+
+header {
+  position: relative;
 }
 
 h1 {
-    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 15px;
     font-size: 52px;
     font-family: 'Terminal Dosis', sans-serif;
 }
 
 img[alt="search"] {
-    float: right;
-    display: inline-block;
-    height: 22px;
-    width: 34px;
+    position: absolute;
+    right: 0;
+    bottom: 94px;
+    background-color: #A6A6A6;
+    padding: 4.5px 10.5px;
 }
 
 header h2 {
@@ -28,10 +41,6 @@ font-size: 13px;
 font-family: 'Helvetica Neue', sans-serif;
 }
 
-header, section, footer {
-  width: 900px;
-  padding: 50px 47px;
-}
 
 .nav_header {
   width: 100%;
@@ -39,13 +48,17 @@ header, section, footer {
   font-family: 'Helvetica Neue', sans-serif;
   font-size: 13px;
   height: 59px;
+  border-style: solid none;
+  border-color: #505050;
+  border-width: 1px;
+  margin-bottom: 25px;
 }
 
 .nav_header>ul {
   width: 90%;
   margin: auto;
-  border: solid none;
-  border-color: #606060;
+  /* border: solid none; */
+  border-color: #A6A6A6;
   border-width: 2px;
 }
 
@@ -55,10 +68,12 @@ header, section, footer {
   width: 16.2%;
   position: relative;
   height: 100%;
+  padding-top: 1.7em;
 }
 
 .nav_header .ul_header>li ul{
   display: none;
+  top: 59px;
   position: absolute;
   text-align: center;
   width: 100%;
@@ -66,13 +81,22 @@ header, section, footer {
 
 .nav_header .ul_header>li:hover ul{
   display: block;
-  background-color: #A6A6A6;
+  background-color: #606060;
+  border-top: 1px solid #505050;
   /* width: 100%; */
 }
 
 .nav_header .ul_header>li:hover ul li{
     height: 33px;
     text-align: center;
+}
+
+.nav_header .ul_header>li:hover ul li:first-child{
+  margin-top: 0.75em;
+}
+
+.nav_header .ul_header>li:hover ul li:last-child{
+  margin-bottom: -0.75em;
 }
 
 .nav_header{
