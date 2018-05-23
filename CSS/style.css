@@ -148,3 +148,38 @@ footer h3 {
     text-align: center;
     margin: 31px 0;
 }
+
+.nav_footer {
+  height: 235px;
+  background-color: #fafafa;
+  border-style: solid none;
+  border-color: #f3f3f3;
+  border-width: 1px;
+}
+
+.nav_footer>ul>li{
+  display: inline-block;
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
+}
+
+.nav_footer>ul>li>h4{
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.nav_footer>ul>li>ul>li{
+  padding-left: 10px;
+}
+
+.nav_footer>ul{
+}
+
+/* .nav_footer>ul>li:after {
+ content: '';
+ width: 100%;
+ display: inline-block;
+} */
